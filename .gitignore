@@ -1,0 +1,57 @@
+# === Build & Derived Data ===
+build/
+build_dd/
+DerivedData/
+*.build/
+
+# === Xcode User Data ===
+*.xcuserstate
+xcuserdata/
+*.xcworkspace/xcuserdata/
+
+# === Xcode Backup Files ===
+*.pbxproj.backup_*
+*.pbxproj.bak
+*.xcodeproj.backup/
+
+# === Binary Artifacts ===
+*.dmg
+*.app
+*.dSYM.zip
+*.dSYM
+*.ipa
+
+# === Logs ===
+*.log
+build_log*.txt
+cli_build.log
+
+# === AI Tool Configs (may contain API keys) ===
+.claude/
+.gemini/
+
+# === Local / Temp ===
+.home/
+.tmp/
+.cache/
+.swiftpm-cache/
+.swift-user-cache/
+.DS_Store
+
+# === Build Helper Scripts ===
+add_*.py
+add_*.rb
+fix_*.py
+
+# === IDE ===
+.idea/
+
+# === Swift Package Manager ===
+.swiftpm/
+Package.resolved
+
+# === Environment / Secrets ===
+*.env
+*.env.local
+*.env.production
+scripts/release.env

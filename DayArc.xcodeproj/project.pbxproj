@@ -1,0 +1,942 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00000000000000001A00C001 /* Core/Analysis/AnalysisManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A00C000 /* Core/Analysis/AnalysisManager.swift */; };
+		00000000000000001A00C003 /* Core/Recording/RecordingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A00C002 /* Core/Recording/RecordingManager.swift */; };
+		00000000000000001A00C005 /* Core/Recording/ScreenRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A00C004 /* Core/Recording/ScreenRecorder.swift */; };
+		00000000000000001A00C007 /* Core/Recording/ActiveDisplayTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A00C006 /* Core/Recording/ActiveDisplayTracker.swift */; };
+		00000000000000001A00C009 /* Core/Recording/StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A00C008 /* Core/Recording/StorageManager.swift */; };
+		00000000000000001A00C00B /* Core/Video/VideoProcessingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A00C00A /* Core/Video/VideoProcessingService.swift */; };
+		00000000000000001A00C00D /* Core/Video/TimelapseStorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A00C00C /* Core/Video/TimelapseStorageManager.swift */; };
+		00000000000000001A00C00F /* Core/AI/LLMService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A00C00E /* Core/AI/LLMService.swift */; };
+		00000000000000001A00C011 /* Core/AI/LLMProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A00C010 /* Core/AI/LLMProvider.swift */; };
+		00000000000000001A00C013 /* Core/AI/LLMLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A00C012 /* Core/AI/LLMLogger.swift */; };
+		00000000000000001A00C015 /* Core/AI/GeminiDirectProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A00C014 /* Core/AI/GeminiDirectProvider.swift */; };
+		00000000000000001A00C017 /* Core/AI/OllamaProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A00C016 /* Core/AI/OllamaProvider.swift */; };
+		00000000000000001A00C019 /* Core/AI/DayflowBackendProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A00C018 /* Core/AI/DayflowBackendProvider.swift */; };
+		00000000000000001A00C01B /* Core/AI/GeminiModelPreference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A00C01A /* Core/AI/GeminiModelPreference.swift */; };
+		00000000000000001A00C01D /* Core/AI/GeminiPromptPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A00C01C /* Core/AI/GeminiPromptPreferences.swift */; };
+		00000000000000001A00C01F /* Core/AI/OllamaPromptPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A00C01E /* Core/AI/OllamaPromptPreferences.swift */; };
+		00000000000000001A00C021 /* Core/AI/LocalEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A00C020 /* Core/AI/LocalEngine.swift */; };
+		00000000000000001A00C023 /* Core/AI/LocalModelPreset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A00C022 /* Core/AI/LocalModelPreset.swift */; };
+		00000000000000001A00C025 /* Core/AI/LocalEndpointUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A00C024 /* Core/AI/LocalEndpointUtilities.swift */; };
+		00000000000000001A00C027 /* System/AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A00C026 /* System/AppState.swift */; };
+		00000000000000001A00C029 /* System/PermissionsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A00C028 /* System/PermissionsManager.swift */; };
+		00000000000000001A00D001 /* Core/Analysis/AnalysisManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A00D000 /* Core/Analysis/AnalysisManager.swift */; };
+		00000000000000001A00D003 /* Core/Recording/RecordingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A00D002 /* Core/Recording/RecordingManager.swift */; };
+		00000000000000001A00D005 /* Core/Recording/ScreenRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A00D004 /* Core/Recording/ScreenRecorder.swift */; };
+		00000000000000001A00D007 /* Core/Recording/ActiveDisplayTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A00D006 /* Core/Recording/ActiveDisplayTracker.swift */; };
+		00000000000000001A00D009 /* Core/Recording/StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A00D008 /* Core/Recording/StorageManager.swift */; };
+		00000000000000001A00D00B /* Core/Video/VideoProcessingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A00D00A /* Core/Video/VideoProcessingService.swift */; };
+		00000000000000001A00D00D /* Core/Video/TimelapseStorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A00D00C /* Core/Video/TimelapseStorageManager.swift */; };
+		00000000000000001A00D00F /* Core/AI/LLMService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A00D00E /* Core/AI/LLMService.swift */; };
+		00000000000000001A00D011 /* Core/AI/LLMProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A00D010 /* Core/AI/LLMProvider.swift */; };
+		00000000000000001A00D013 /* Core/AI/LLMLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A00D012 /* Core/AI/LLMLogger.swift */; };
+		00000000000000001A00D015 /* Core/AI/GeminiDirectProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A00D014 /* Core/AI/GeminiDirectProvider.swift */; };
+		00000000000000001A00D017 /* Core/AI/OllamaProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A00D016 /* Core/AI/OllamaProvider.swift */; };
+		00000000000000001A00D019 /* Core/AI/DayflowBackendProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A00D018 /* Core/AI/DayflowBackendProvider.swift */; };
+		00000000000000001A00D01B /* Core/AI/GeminiModelPreference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A00D01A /* Core/AI/GeminiModelPreference.swift */; };
+		00000000000000001A00D01D /* Core/AI/GeminiPromptPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A00D01C /* Core/AI/GeminiPromptPreferences.swift */; };
+		00000000000000001A00D01F /* Core/AI/OllamaPromptPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A00D01E /* Core/AI/OllamaPromptPreferences.swift */; };
+		00000000000000001A00D021 /* Core/AI/LocalEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A00D020 /* Core/AI/LocalEngine.swift */; };
+		00000000000000001A00D023 /* Core/AI/LocalModelPreset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A00D022 /* Core/AI/LocalModelPreset.swift */; };
+		00000000000000001A00D025 /* Core/AI/LocalEndpointUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A00D024 /* Core/AI/LocalEndpointUtilities.swift */; };
+		00000000000000001A00D027 /* System/AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A00D026 /* System/AppState.swift */; };
+		00000000000000001A00D029 /* System/PermissionsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A00D028 /* System/PermissionsManager.swift */; };
+		00000000000000001A00D02D /* Core/Utilities/SentryMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A00D02C /* Core/Utilities/SentryMock.swift */; };
+		00000000000000001A00D02F /* Core/Utilities/AnalyticsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A00D02E /* Core/Utilities/AnalyticsService.swift */; };
+		00000000000000001A00E001 /* Core/Analysis/AnalysisManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A00E000 /* Core/Analysis/AnalysisManager.swift */; };
+		00000000000000001A00E003 /* Core/Recording/RecordingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A00E002 /* Core/Recording/RecordingManager.swift */; };
+		00000000000000001A00E005 /* Core/Recording/ScreenRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A00E004 /* Core/Recording/ScreenRecorder.swift */; };
+		00000000000000001A00E007 /* Core/Recording/ActiveDisplayTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A00E006 /* Core/Recording/ActiveDisplayTracker.swift */; };
+		00000000000000001A00E009 /* Core/Recording/StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A00E008 /* Core/Recording/StorageManager.swift */; };
+		00000000000000001A00E00B /* Core/Video/VideoProcessingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A00E00A /* Core/Video/VideoProcessingService.swift */; };
+		00000000000000001A00E00D /* Core/Video/TimelapseStorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A00E00C /* Core/Video/TimelapseStorageManager.swift */; };
+		00000000000000001A00E00F /* Core/AI/LLMService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A00E00E /* Core/AI/LLMService.swift */; };
+		00000000000000001A00E011 /* Core/AI/LLMProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A00E010 /* Core/AI/LLMProvider.swift */; };
+		00000000000000001A00E013 /* Core/AI/LLMLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A00E012 /* Core/AI/LLMLogger.swift */; };
+		00000000000000001A00E015 /* Core/AI/GeminiDirectProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A00E014 /* Core/AI/GeminiDirectProvider.swift */; };
+		00000000000000001A00E017 /* Core/AI/OllamaProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A00E016 /* Core/AI/OllamaProvider.swift */; };
+		00000000000000001A00E019 /* Core/AI/DayflowBackendProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A00E018 /* Core/AI/DayflowBackendProvider.swift */; };
+		00000000000000001A00E01B /* Core/AI/GeminiModelPreference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A00E01A /* Core/AI/GeminiModelPreference.swift */; };
+		00000000000000001A00E01D /* Core/AI/GeminiPromptPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A00E01C /* Core/AI/GeminiPromptPreferences.swift */; };
+		00000000000000001A00E01F /* Core/AI/OllamaPromptPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A00E01E /* Core/AI/OllamaPromptPreferences.swift */; };
+		00000000000000001A00E021 /* Core/AI/LocalEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A00E020 /* Core/AI/LocalEngine.swift */; };
+		00000000000000001A00E023 /* Core/AI/LocalModelPreset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A00E022 /* Core/AI/LocalModelPreset.swift */; };
+		00000000000000001A00E025 /* Core/AI/LocalEndpointUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A00E024 /* Core/AI/LocalEndpointUtilities.swift */; };
+		00000000000000001A00E027 /* System/AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A00E026 /* System/AppState.swift */; };
+		00000000000000001A00E029 /* System/PermissionsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A00E028 /* System/PermissionsManager.swift */; };
+		00000000000000001A00E02D /* Core/Utilities/SentryMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A00E02C /* Core/Utilities/SentryMock.swift */; };
+		00000000000000001A00E02F /* Core/Utilities/AnalyticsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A00E02E /* Core/Utilities/AnalyticsService.swift */; };
+		00000000000000001A00E031 /* Core/Analysis/AnalysisModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A00E030 /* Core/Analysis/AnalysisModels.swift */; };
+		00000000000000001A00F001 /* Core/Analysis/AnalysisManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A00F000 /* Core/Analysis/AnalysisManager.swift */; };
+		00000000000000001A00F003 /* Core/Recording/RecordingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A00F002 /* Core/Recording/RecordingManager.swift */; };
+		00000000000000001A00F005 /* Core/Recording/ScreenRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A00F004 /* Core/Recording/ScreenRecorder.swift */; };
+		00000000000000001A00F007 /* Core/Recording/ActiveDisplayTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A00F006 /* Core/Recording/ActiveDisplayTracker.swift */; };
+		00000000000000001A00F009 /* Core/Recording/StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A00F008 /* Core/Recording/StorageManager.swift */; };
+		00000000000000001A00F00B /* Core/Video/VideoProcessingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A00F00A /* Core/Video/VideoProcessingService.swift */; };
+		00000000000000001A00F00D /* Core/Video/TimelapseStorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A00F00C /* Core/Video/TimelapseStorageManager.swift */; };
+		00000000000000001A00F00F /* Core/AI/LLMService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A00F00E /* Core/AI/LLMService.swift */; };
+		00000000000000001A00F011 /* Core/AI/LLMProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A00F010 /* Core/AI/LLMProvider.swift */; };
+		00000000000000001A00F013 /* Core/AI/LLMLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A00F012 /* Core/AI/LLMLogger.swift */; };
+		00000000000000001A00F015 /* Core/AI/GeminiDirectProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A00F014 /* Core/AI/GeminiDirectProvider.swift */; };
+		00000000000000001A00F017 /* Core/AI/OllamaProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A00F016 /* Core/AI/OllamaProvider.swift */; };
+		00000000000000001A00F019 /* Core/AI/DayflowBackendProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A00F018 /* Core/AI/DayflowBackendProvider.swift */; };
+		00000000000000001A00F01B /* Core/AI/GeminiModelPreference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A00F01A /* Core/AI/GeminiModelPreference.swift */; };
+		00000000000000001A00F01D /* Core/AI/GeminiPromptPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A00F01C /* Core/AI/GeminiPromptPreferences.swift */; };
+		00000000000000001A00F01F /* Core/AI/OllamaPromptPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A00F01E /* Core/AI/OllamaPromptPreferences.swift */; };
+		00000000000000001A00F021 /* Core/AI/LocalEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A00F020 /* Core/AI/LocalEngine.swift */; };
+		00000000000000001A00F023 /* Core/AI/LocalModelPreset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A00F022 /* Core/AI/LocalModelPreset.swift */; };
+		00000000000000001A00F025 /* Core/AI/LocalEndpointUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A00F024 /* Core/AI/LocalEndpointUtilities.swift */; };
+		00000000000000001A00F027 /* System/AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A00F026 /* System/AppState.swift */; };
+		00000000000000001A00F029 /* System/PermissionsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A00F028 /* System/PermissionsManager.swift */; };
+		00000000000000001A00F02D /* Core/Utilities/SentryMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A00F02C /* Core/Utilities/SentryMock.swift */; };
+		00000000000000001A00F02F /* Core/Utilities/AnalyticsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A00F02E /* Core/Utilities/AnalyticsService.swift */; };
+		00000000000000001A00F031 /* Core/Analysis/AnalysisModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A00F030 /* Core/Analysis/AnalysisModels.swift */; };
+		00000000000000001A00F033 /* Core/Analysis/TimelineCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A00F032 /* Core/Analysis/TimelineCategory.swift */; };
+		00000000000000001A010001 /* Core/Analysis/AnalysisManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A010000 /* Core/Analysis/AnalysisManager.swift */; };
+		00000000000000001A010003 /* Core/Recording/RecordingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A010002 /* Core/Recording/RecordingManager.swift */; };
+		00000000000000001A010005 /* Core/Recording/ScreenRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A010004 /* Core/Recording/ScreenRecorder.swift */; };
+		00000000000000001A010007 /* Core/Recording/ActiveDisplayTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A010006 /* Core/Recording/ActiveDisplayTracker.swift */; };
+		00000000000000001A010009 /* Core/Recording/StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A010008 /* Core/Recording/StorageManager.swift */; };
+		00000000000000001A01000B /* Core/Video/VideoProcessingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A01000A /* Core/Video/VideoProcessingService.swift */; };
+		00000000000000001A01000D /* Core/Video/TimelapseStorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A01000C /* Core/Video/TimelapseStorageManager.swift */; };
+		00000000000000001A01000F /* Core/AI/LLMService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A01000E /* Core/AI/LLMService.swift */; };
+		00000000000000001A010011 /* Core/AI/LLMProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A010010 /* Core/AI/LLMProvider.swift */; };
+		00000000000000001A010013 /* Core/AI/LLMLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A010012 /* Core/AI/LLMLogger.swift */; };
+		00000000000000001A010015 /* Core/AI/GeminiDirectProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A010014 /* Core/AI/GeminiDirectProvider.swift */; };
+		00000000000000001A010017 /* Core/AI/OllamaProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A010016 /* Core/AI/OllamaProvider.swift */; };
+		00000000000000001A010019 /* Core/AI/DayflowBackendProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A010018 /* Core/AI/DayflowBackendProvider.swift */; };
+		00000000000000001A01001B /* Core/AI/GeminiModelPreference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A01001A /* Core/AI/GeminiModelPreference.swift */; };
+		00000000000000001A01001D /* Core/AI/GeminiPromptPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A01001C /* Core/AI/GeminiPromptPreferences.swift */; };
+		00000000000000001A01001F /* Core/AI/OllamaPromptPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A01001E /* Core/AI/OllamaPromptPreferences.swift */; };
+		00000000000000001A010021 /* Core/AI/LocalEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A010020 /* Core/AI/LocalEngine.swift */; };
+		00000000000000001A010023 /* Core/AI/LocalModelPreset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A010022 /* Core/AI/LocalModelPreset.swift */; };
+		00000000000000001A010025 /* Core/AI/LocalEndpointUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A010024 /* Core/AI/LocalEndpointUtilities.swift */; };
+		00000000000000001A010027 /* System/AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A010026 /* System/AppState.swift */; };
+		00000000000000001A010029 /* System/PermissionsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A010028 /* System/PermissionsManager.swift */; };
+		00000000000000001A01002D /* Core/Utilities/SentryMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A01002C /* Core/Utilities/SentryMock.swift */; };
+		00000000000000001A01002F /* Core/Utilities/AnalyticsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A01002E /* Core/Utilities/AnalyticsService.swift */; };
+		00000000000000001A010031 /* Core/Analysis/AnalysisModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A010030 /* Core/Analysis/AnalysisModels.swift */; };
+		00000000000000001A010033 /* Core/Analysis/TimelineCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A010032 /* Core/Analysis/TimelineCategory.swift */; };
+		00000000000000001A010035 /* Core/Recording/StoragePreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A010034 /* Core/Recording/StoragePreferences.swift */; };
+		00000000000000001A011001 /* Core/Analysis/AnalysisManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A011000 /* Core/Analysis/AnalysisManager.swift */; };
+		00000000000000001A011003 /* Core/Recording/RecordingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A011002 /* Core/Recording/RecordingManager.swift */; };
+		00000000000000001A011005 /* Core/Recording/ScreenRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A011004 /* Core/Recording/ScreenRecorder.swift */; };
+		00000000000000001A011007 /* Core/Recording/ActiveDisplayTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A011006 /* Core/Recording/ActiveDisplayTracker.swift */; };
+		00000000000000001A011009 /* Core/Recording/StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A011008 /* Core/Recording/StorageManager.swift */; };
+		00000000000000001A01100B /* Core/Video/VideoProcessingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A01100A /* Core/Video/VideoProcessingService.swift */; };
+		00000000000000001A01100D /* Core/Video/TimelapseStorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A01100C /* Core/Video/TimelapseStorageManager.swift */; };
+		00000000000000001A01100F /* Core/AI/LLMService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A01100E /* Core/AI/LLMService.swift */; };
+		00000000000000001A011011 /* Core/AI/LLMProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A011010 /* Core/AI/LLMProvider.swift */; };
+		00000000000000001A011013 /* Core/AI/LLMLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A011012 /* Core/AI/LLMLogger.swift */; };
+		00000000000000001A011015 /* Core/AI/GeminiDirectProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A011014 /* Core/AI/GeminiDirectProvider.swift */; };
+		00000000000000001A011017 /* Core/AI/OllamaProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A011016 /* Core/AI/OllamaProvider.swift */; };
+		00000000000000001A011019 /* Core/AI/DayflowBackendProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A011018 /* Core/AI/DayflowBackendProvider.swift */; };
+		00000000000000001A01101B /* Core/AI/GeminiModelPreference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A01101A /* Core/AI/GeminiModelPreference.swift */; };
+		00000000000000001A01101D /* Core/AI/GeminiPromptPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A01101C /* Core/AI/GeminiPromptPreferences.swift */; };
+		00000000000000001A01101F /* Core/AI/OllamaPromptPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A01101E /* Core/AI/OllamaPromptPreferences.swift */; };
+		00000000000000001A011021 /* Core/AI/LocalEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A011020 /* Core/AI/LocalEngine.swift */; };
+		00000000000000001A011023 /* Core/AI/LocalModelPreset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A011022 /* Core/AI/LocalModelPreset.swift */; };
+		00000000000000001A011025 /* Core/AI/LocalEndpointUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A011024 /* Core/AI/LocalEndpointUtilities.swift */; };
+		00000000000000001A011027 /* System/AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A011026 /* System/AppState.swift */; };
+		00000000000000001A011029 /* System/PermissionsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A011028 /* System/PermissionsManager.swift */; };
+		00000000000000001A01102D /* Core/Utilities/SentryMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A01102C /* Core/Utilities/SentryMock.swift */; };
+		00000000000000001A01102F /* Core/Utilities/AnalyticsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A01102E /* Core/Utilities/AnalyticsService.swift */; };
+		00000000000000001A011031 /* Core/Analysis/AnalysisModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A011030 /* Core/Analysis/AnalysisModels.swift */; };
+		00000000000000001A011033 /* Core/Analysis/TimelineCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A011032 /* Core/Analysis/TimelineCategory.swift */; };
+		00000000000000001A011035 /* Core/Recording/StoragePreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A011034 /* Core/Recording/StoragePreferences.swift */; };
+		00000000000000001A011037 /* Core/Security/KeychainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A011036 /* Core/Security/KeychainManager.swift */; };
+		00000000000000001A011039 /* Core/Recording/StoragePreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A011038 /* Core/Recording/StoragePreferences.swift */; };
+		00000000000000001A01103B /* Core/Security/KeychainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A01103A /* Core/Security/KeychainManager.swift */; };
+		00000000000000001A011041 /* Core/Utilities/UserDefaultsMigrator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A011040 /* Core/Utilities/UserDefaultsMigrator.swift */; };
+		00000000000000001A011043 /* Core/Utilities/StoragePathMigrator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000001A011042 /* Core/Utilities/StoragePathMigrator.swift */; };
+		1A0000010000000000000001 /* DayArcApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000020000000000000001 /* DayArcApp.swift */; };
+		1A0000030000000000000001 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000040000000000000001 /* ContentView.swift */; };
+		1A0000050000000000000001 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A0000060000000000000001 /* Assets.xcassets */; };
+		1A0000170000000000000001 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000180000000000000001 /* Models.swift */; };
+		1A0000190000000000000001 /* LegacyDayflowReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A00001A0000000000000001 /* LegacyDayflowReader.swift */; };
+		1A00001B0000000000000001 /* AIProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A00001C0000000000000001 /* AIProvider.swift */; };
+		1A00001D0000000000000001 /* OpenAIProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A00001E0000000000000001 /* OpenAIProvider.swift */; };
+		1A00001F0000000000000001 /* ClaudeProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000200000000000000001 /* ClaudeProvider.swift */; };
+		1A0000210000000000000001 /* GeminiProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000220000000000000001 /* GeminiProvider.swift */; };
+		1A0000230000000000000001 /* LocalLLMProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000240000000000000001 /* LocalLLMProvider.swift */; };
+		1A0000250000000000000001 /* StatsCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000260000000000000001 /* StatsCalculator.swift */; };
+		1A0000270000000000000001 /* MarkdownGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000280000000000000001 /* MarkdownGenerator.swift */; };
+		1A0000290000000000000001 /* ObsidianVault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A00002A0000000000000001 /* ObsidianVault.swift */; };
+		1A00002C0000000000000001 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A00002B0000000000000001 /* DashboardView.swift */; };
+		1A00002E0000000000000001 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A00002D0000000000000001 /* SettingsView.swift */; };
+		1A0000300000000000000001 /* AnalysisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A00002F0000000000000001 /* AnalysisView.swift */; };
+		1A0000320000000000000001 /* SchedulerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000310000000000000001 /* SchedulerManager.swift */; };
+		1A0000340000000000000001 /* LogsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000330000000000000001 /* LogsView.swift */; };
+		1A0000360000000000000001 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000350000000000000001 /* NotificationManager.swift */; };
+		1A0000370000000000000001 /* MigrationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0000380000000000000001 /* MigrationManager.swift */; };
+		1A0000390000000000000001 /* ProviderDiagnostics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A00003A0000000000000001 /* ProviderDiagnostics.swift */; };
+		1A00003B0000000000000001 /* AnalysisFallback.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A00003C0000000000000001 /* AnalysisFallback.swift */; };
+		1A00003D0000000000000001 /* ChartGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A00003E0000000000000001 /* ChartGenerator.swift */; };
+		1A00C045 /* Core/AI/PromptManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A00C044 /* Core/AI/PromptManager.swift */; };
+		1A00C047 /* Views/Components/PromptEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A00C046 /* Views/Components/PromptEditor.swift */; };
+		1A00D102 /* GRDB in Frameworks */ = {isa = PBXBuildFile; productRef = 1A00D101 /* GRDB */; };
+		1AFFF1010000000000000001 /* MarkdownGeneratorV3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AFFF1020000000000000001 /* MarkdownGeneratorV3.swift */; };
+		CB9BE03BDDDD4676A5A08E02 /* TimelineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE3309ABC48742CBAE60EC4B /* TimelineView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		00000000000000001A00C000 /* Core/Analysis/AnalysisManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/Analysis/AnalysisManager.swift; sourceTree = "<group>"; };
+		00000000000000001A00C002 /* Core/Recording/RecordingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/Recording/RecordingManager.swift; sourceTree = "<group>"; };
+		00000000000000001A00C004 /* Core/Recording/ScreenRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/Recording/ScreenRecorder.swift; sourceTree = "<group>"; };
+		00000000000000001A00C006 /* Core/Recording/ActiveDisplayTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/Recording/ActiveDisplayTracker.swift; sourceTree = "<group>"; };
+		00000000000000001A00C008 /* Core/Recording/StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/Recording/StorageManager.swift; sourceTree = "<group>"; };
+		00000000000000001A00C00A /* Core/Video/VideoProcessingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/Video/VideoProcessingService.swift; sourceTree = "<group>"; };
+		00000000000000001A00C00C /* Core/Video/TimelapseStorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/Video/TimelapseStorageManager.swift; sourceTree = "<group>"; };
+		00000000000000001A00C00E /* Core/AI/LLMService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/AI/LLMService.swift; sourceTree = "<group>"; };
+		00000000000000001A00C010 /* Core/AI/LLMProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/AI/LLMProvider.swift; sourceTree = "<group>"; };
+		00000000000000001A00C012 /* Core/AI/LLMLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/AI/LLMLogger.swift; sourceTree = "<group>"; };
+		00000000000000001A00C014 /* Core/AI/GeminiDirectProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/AI/GeminiDirectProvider.swift; sourceTree = "<group>"; };
+		00000000000000001A00C016 /* Core/AI/OllamaProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/AI/OllamaProvider.swift; sourceTree = "<group>"; };
+		00000000000000001A00C018 /* Core/AI/DayflowBackendProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/AI/DayflowBackendProvider.swift; sourceTree = "<group>"; };
+		00000000000000001A00C01A /* Core/AI/GeminiModelPreference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/AI/GeminiModelPreference.swift; sourceTree = "<group>"; };
+		00000000000000001A00C01C /* Core/AI/GeminiPromptPreferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/AI/GeminiPromptPreferences.swift; sourceTree = "<group>"; };
+		00000000000000001A00C01E /* Core/AI/OllamaPromptPreferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/AI/OllamaPromptPreferences.swift; sourceTree = "<group>"; };
+		00000000000000001A00C020 /* Core/AI/LocalEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/AI/LocalEngine.swift; sourceTree = "<group>"; };
+		00000000000000001A00C022 /* Core/AI/LocalModelPreset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/AI/LocalModelPreset.swift; sourceTree = "<group>"; };
+		00000000000000001A00C024 /* Core/AI/LocalEndpointUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/AI/LocalEndpointUtilities.swift; sourceTree = "<group>"; };
+		00000000000000001A00C026 /* System/AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = System/AppState.swift; sourceTree = "<group>"; };
+		00000000000000001A00C028 /* System/PermissionsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = System/PermissionsManager.swift; sourceTree = "<group>"; };
+		00000000000000001A00D000 /* Core/Analysis/AnalysisManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/Analysis/AnalysisManager.swift; sourceTree = "<group>"; };
+		00000000000000001A00D002 /* Core/Recording/RecordingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/Recording/RecordingManager.swift; sourceTree = "<group>"; };
+		00000000000000001A00D004 /* Core/Recording/ScreenRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/Recording/ScreenRecorder.swift; sourceTree = "<group>"; };
+		00000000000000001A00D006 /* Core/Recording/ActiveDisplayTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/Recording/ActiveDisplayTracker.swift; sourceTree = "<group>"; };
+		00000000000000001A00D008 /* Core/Recording/StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/Recording/StorageManager.swift; sourceTree = "<group>"; };
+		00000000000000001A00D00A /* Core/Video/VideoProcessingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/Video/VideoProcessingService.swift; sourceTree = "<group>"; };
+		00000000000000001A00D00C /* Core/Video/TimelapseStorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/Video/TimelapseStorageManager.swift; sourceTree = "<group>"; };
+		00000000000000001A00D00E /* Core/AI/LLMService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/AI/LLMService.swift; sourceTree = "<group>"; };
+		00000000000000001A00D010 /* Core/AI/LLMProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/AI/LLMProvider.swift; sourceTree = "<group>"; };
+		00000000000000001A00D012 /* Core/AI/LLMLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/AI/LLMLogger.swift; sourceTree = "<group>"; };
+		00000000000000001A00D014 /* Core/AI/GeminiDirectProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/AI/GeminiDirectProvider.swift; sourceTree = "<group>"; };
+		00000000000000001A00D016 /* Core/AI/OllamaProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/AI/OllamaProvider.swift; sourceTree = "<group>"; };
+		00000000000000001A00D018 /* Core/AI/DayflowBackendProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/AI/DayflowBackendProvider.swift; sourceTree = "<group>"; };
+		00000000000000001A00D01A /* Core/AI/GeminiModelPreference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/AI/GeminiModelPreference.swift; sourceTree = "<group>"; };
+		00000000000000001A00D01C /* Core/AI/GeminiPromptPreferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/AI/GeminiPromptPreferences.swift; sourceTree = "<group>"; };
+		00000000000000001A00D01E /* Core/AI/OllamaPromptPreferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/AI/OllamaPromptPreferences.swift; sourceTree = "<group>"; };
+		00000000000000001A00D020 /* Core/AI/LocalEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/AI/LocalEngine.swift; sourceTree = "<group>"; };
+		00000000000000001A00D022 /* Core/AI/LocalModelPreset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/AI/LocalModelPreset.swift; sourceTree = "<group>"; };
+		00000000000000001A00D024 /* Core/AI/LocalEndpointUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/AI/LocalEndpointUtilities.swift; sourceTree = "<group>"; };
+		00000000000000001A00D026 /* System/AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = System/AppState.swift; sourceTree = "<group>"; };
+		00000000000000001A00D028 /* System/PermissionsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = System/PermissionsManager.swift; sourceTree = "<group>"; };
+		00000000000000001A00D02C /* Core/Utilities/SentryMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/Utilities/SentryMock.swift; sourceTree = "<group>"; };
+		00000000000000001A00D02E /* Core/Utilities/AnalyticsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/Utilities/AnalyticsService.swift; sourceTree = "<group>"; };
+		00000000000000001A00E000 /* Core/Analysis/AnalysisManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/Analysis/AnalysisManager.swift; sourceTree = "<group>"; };
+		00000000000000001A00E002 /* Core/Recording/RecordingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/Recording/RecordingManager.swift; sourceTree = "<group>"; };
+		00000000000000001A00E004 /* Core/Recording/ScreenRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/Recording/ScreenRecorder.swift; sourceTree = "<group>"; };
+		00000000000000001A00E006 /* Core/Recording/ActiveDisplayTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/Recording/ActiveDisplayTracker.swift; sourceTree = "<group>"; };
+		00000000000000001A00E008 /* Core/Recording/StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/Recording/StorageManager.swift; sourceTree = "<group>"; };
+		00000000000000001A00E00A /* Core/Video/VideoProcessingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/Video/VideoProcessingService.swift; sourceTree = "<group>"; };
+		00000000000000001A00E00C /* Core/Video/TimelapseStorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/Video/TimelapseStorageManager.swift; sourceTree = "<group>"; };
+		00000000000000001A00E00E /* Core/AI/LLMService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/AI/LLMService.swift; sourceTree = "<group>"; };
+		00000000000000001A00E010 /* Core/AI/LLMProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/AI/LLMProvider.swift; sourceTree = "<group>"; };
+		00000000000000001A00E012 /* Core/AI/LLMLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/AI/LLMLogger.swift; sourceTree = "<group>"; };
+		00000000000000001A00E014 /* Core/AI/GeminiDirectProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/AI/GeminiDirectProvider.swift; sourceTree = "<group>"; };
+		00000000000000001A00E016 /* Core/AI/OllamaProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/AI/OllamaProvider.swift; sourceTree = "<group>"; };
+		00000000000000001A00E018 /* Core/AI/DayflowBackendProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/AI/DayflowBackendProvider.swift; sourceTree = "<group>"; };
+		00000000000000001A00E01A /* Core/AI/GeminiModelPreference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/AI/GeminiModelPreference.swift; sourceTree = "<group>"; };
+		00000000000000001A00E01C /* Core/AI/GeminiPromptPreferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/AI/GeminiPromptPreferences.swift; sourceTree = "<group>"; };
+		00000000000000001A00E01E /* Core/AI/OllamaPromptPreferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/AI/OllamaPromptPreferences.swift; sourceTree = "<group>"; };
+		00000000000000001A00E020 /* Core/AI/LocalEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/AI/LocalEngine.swift; sourceTree = "<group>"; };
+		00000000000000001A00E022 /* Core/AI/LocalModelPreset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/AI/LocalModelPreset.swift; sourceTree = "<group>"; };
+		00000000000000001A00E024 /* Core/AI/LocalEndpointUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/AI/LocalEndpointUtilities.swift; sourceTree = "<group>"; };
+		00000000000000001A00E026 /* System/AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = System/AppState.swift; sourceTree = "<group>"; };
+		00000000000000001A00E028 /* System/PermissionsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = System/PermissionsManager.swift; sourceTree = "<group>"; };
+		00000000000000001A00E02C /* Core/Utilities/SentryMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/Utilities/SentryMock.swift; sourceTree = "<group>"; };
+		00000000000000001A00E02E /* Core/Utilities/AnalyticsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/Utilities/AnalyticsService.swift; sourceTree = "<group>"; };
+		00000000000000001A00E030 /* Core/Analysis/AnalysisModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/Analysis/AnalysisModels.swift; sourceTree = "<group>"; };
+		00000000000000001A00F000 /* Core/Analysis/AnalysisManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/Analysis/AnalysisManager.swift; sourceTree = "<group>"; };
+		00000000000000001A00F002 /* Core/Recording/RecordingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/Recording/RecordingManager.swift; sourceTree = "<group>"; };
+		00000000000000001A00F004 /* Core/Recording/ScreenRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/Recording/ScreenRecorder.swift; sourceTree = "<group>"; };
+		00000000000000001A00F006 /* Core/Recording/ActiveDisplayTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/Recording/ActiveDisplayTracker.swift; sourceTree = "<group>"; };
+		00000000000000001A00F008 /* Core/Recording/StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/Recording/StorageManager.swift; sourceTree = "<group>"; };
+		00000000000000001A00F00A /* Core/Video/VideoProcessingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/Video/VideoProcessingService.swift; sourceTree = "<group>"; };
+		00000000000000001A00F00C /* Core/Video/TimelapseStorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/Video/TimelapseStorageManager.swift; sourceTree = "<group>"; };
+		00000000000000001A00F00E /* Core/AI/LLMService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/AI/LLMService.swift; sourceTree = "<group>"; };
+		00000000000000001A00F010 /* Core/AI/LLMProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/AI/LLMProvider.swift; sourceTree = "<group>"; };
+		00000000000000001A00F012 /* Core/AI/LLMLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/AI/LLMLogger.swift; sourceTree = "<group>"; };
+		00000000000000001A00F014 /* Core/AI/GeminiDirectProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/AI/GeminiDirectProvider.swift; sourceTree = "<group>"; };
+		00000000000000001A00F016 /* Core/AI/OllamaProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/AI/OllamaProvider.swift; sourceTree = "<group>"; };
+		00000000000000001A00F018 /* Core/AI/DayflowBackendProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/AI/DayflowBackendProvider.swift; sourceTree = "<group>"; };
+		00000000000000001A00F01A /* Core/AI/GeminiModelPreference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/AI/GeminiModelPreference.swift; sourceTree = "<group>"; };
+		00000000000000001A00F01C /* Core/AI/GeminiPromptPreferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/AI/GeminiPromptPreferences.swift; sourceTree = "<group>"; };
+		00000000000000001A00F01E /* Core/AI/OllamaPromptPreferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/AI/OllamaPromptPreferences.swift; sourceTree = "<group>"; };
+		00000000000000001A00F020 /* Core/AI/LocalEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/AI/LocalEngine.swift; sourceTree = "<group>"; };
+		00000000000000001A00F022 /* Core/AI/LocalModelPreset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/AI/LocalModelPreset.swift; sourceTree = "<group>"; };
+		00000000000000001A00F024 /* Core/AI/LocalEndpointUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/AI/LocalEndpointUtilities.swift; sourceTree = "<group>"; };
+		00000000000000001A00F026 /* System/AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = System/AppState.swift; sourceTree = "<group>"; };
+		00000000000000001A00F028 /* System/PermissionsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = System/PermissionsManager.swift; sourceTree = "<group>"; };
+		00000000000000001A00F02C /* Core/Utilities/SentryMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/Utilities/SentryMock.swift; sourceTree = "<group>"; };
+		00000000000000001A00F02E /* Core/Utilities/AnalyticsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/Utilities/AnalyticsService.swift; sourceTree = "<group>"; };
+		00000000000000001A00F030 /* Core/Analysis/AnalysisModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/Analysis/AnalysisModels.swift; sourceTree = "<group>"; };
+		00000000000000001A00F032 /* Core/Analysis/TimelineCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/Analysis/TimelineCategory.swift; sourceTree = "<group>"; };
+		00000000000000001A010000 /* Core/Analysis/AnalysisManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/Analysis/AnalysisManager.swift; sourceTree = "<group>"; };
+		00000000000000001A010002 /* Core/Recording/RecordingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/Recording/RecordingManager.swift; sourceTree = "<group>"; };
+		00000000000000001A010004 /* Core/Recording/ScreenRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/Recording/ScreenRecorder.swift; sourceTree = "<group>"; };
+		00000000000000001A010006 /* Core/Recording/ActiveDisplayTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/Recording/ActiveDisplayTracker.swift; sourceTree = "<group>"; };
+		00000000000000001A010008 /* Core/Recording/StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/Recording/StorageManager.swift; sourceTree = "<group>"; };
+		00000000000000001A01000A /* Core/Video/VideoProcessingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/Video/VideoProcessingService.swift; sourceTree = "<group>"; };
+		00000000000000001A01000C /* Core/Video/TimelapseStorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/Video/TimelapseStorageManager.swift; sourceTree = "<group>"; };
+		00000000000000001A01000E /* Core/AI/LLMService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/AI/LLMService.swift; sourceTree = "<group>"; };
+		00000000000000001A010010 /* Core/AI/LLMProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/AI/LLMProvider.swift; sourceTree = "<group>"; };
+		00000000000000001A010012 /* Core/AI/LLMLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/AI/LLMLogger.swift; sourceTree = "<group>"; };
+		00000000000000001A010014 /* Core/AI/GeminiDirectProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/AI/GeminiDirectProvider.swift; sourceTree = "<group>"; };
+		00000000000000001A010016 /* Core/AI/OllamaProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/AI/OllamaProvider.swift; sourceTree = "<group>"; };
+		00000000000000001A010018 /* Core/AI/DayflowBackendProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/AI/DayflowBackendProvider.swift; sourceTree = "<group>"; };
+		00000000000000001A01001A /* Core/AI/GeminiModelPreference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/AI/GeminiModelPreference.swift; sourceTree = "<group>"; };
+		00000000000000001A01001C /* Core/AI/GeminiPromptPreferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/AI/GeminiPromptPreferences.swift; sourceTree = "<group>"; };
+		00000000000000001A01001E /* Core/AI/OllamaPromptPreferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/AI/OllamaPromptPreferences.swift; sourceTree = "<group>"; };
+		00000000000000001A010020 /* Core/AI/LocalEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/AI/LocalEngine.swift; sourceTree = "<group>"; };
+		00000000000000001A010022 /* Core/AI/LocalModelPreset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/AI/LocalModelPreset.swift; sourceTree = "<group>"; };
+		00000000000000001A010024 /* Core/AI/LocalEndpointUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/AI/LocalEndpointUtilities.swift; sourceTree = "<group>"; };
+		00000000000000001A010026 /* System/AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = System/AppState.swift; sourceTree = "<group>"; };
+		00000000000000001A010028 /* System/PermissionsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = System/PermissionsManager.swift; sourceTree = "<group>"; };
+		00000000000000001A01002C /* Core/Utilities/SentryMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/Utilities/SentryMock.swift; sourceTree = "<group>"; };
+		00000000000000001A01002E /* Core/Utilities/AnalyticsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/Utilities/AnalyticsService.swift; sourceTree = "<group>"; };
+		00000000000000001A010030 /* Core/Analysis/AnalysisModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/Analysis/AnalysisModels.swift; sourceTree = "<group>"; };
+		00000000000000001A010032 /* Core/Analysis/TimelineCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/Analysis/TimelineCategory.swift; sourceTree = "<group>"; };
+		00000000000000001A010034 /* Core/Recording/StoragePreferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/Recording/StoragePreferences.swift; sourceTree = "<group>"; };
+		00000000000000001A011000 /* Core/Analysis/AnalysisManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/Analysis/AnalysisManager.swift; sourceTree = "<group>"; };
+		00000000000000001A011002 /* Core/Recording/RecordingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/Recording/RecordingManager.swift; sourceTree = "<group>"; };
+		00000000000000001A011004 /* Core/Recording/ScreenRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/Recording/ScreenRecorder.swift; sourceTree = "<group>"; };
+		00000000000000001A011006 /* Core/Recording/ActiveDisplayTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/Recording/ActiveDisplayTracker.swift; sourceTree = "<group>"; };
+		00000000000000001A011008 /* Core/Recording/StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/Recording/StorageManager.swift; sourceTree = "<group>"; };
+		00000000000000001A01100A /* Core/Video/VideoProcessingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/Video/VideoProcessingService.swift; sourceTree = "<group>"; };
+		00000000000000001A01100C /* Core/Video/TimelapseStorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/Video/TimelapseStorageManager.swift; sourceTree = "<group>"; };
+		00000000000000001A01100E /* Core/AI/LLMService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/AI/LLMService.swift; sourceTree = "<group>"; };
+		00000000000000001A011010 /* Core/AI/LLMProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/AI/LLMProvider.swift; sourceTree = "<group>"; };
+		00000000000000001A011012 /* Core/AI/LLMLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/AI/LLMLogger.swift; sourceTree = "<group>"; };
+		00000000000000001A011014 /* Core/AI/GeminiDirectProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/AI/GeminiDirectProvider.swift; sourceTree = "<group>"; };
+		00000000000000001A011016 /* Core/AI/OllamaProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/AI/OllamaProvider.swift; sourceTree = "<group>"; };
+		00000000000000001A011018 /* Core/AI/DayflowBackendProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/AI/DayflowBackendProvider.swift; sourceTree = "<group>"; };
+		00000000000000001A01101A /* Core/AI/GeminiModelPreference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/AI/GeminiModelPreference.swift; sourceTree = "<group>"; };
+		00000000000000001A01101C /* Core/AI/GeminiPromptPreferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/AI/GeminiPromptPreferences.swift; sourceTree = "<group>"; };
+		00000000000000001A01101E /* Core/AI/OllamaPromptPreferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/AI/OllamaPromptPreferences.swift; sourceTree = "<group>"; };
+		00000000000000001A011020 /* Core/AI/LocalEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/AI/LocalEngine.swift; sourceTree = "<group>"; };
+		00000000000000001A011022 /* Core/AI/LocalModelPreset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/AI/LocalModelPreset.swift; sourceTree = "<group>"; };
+		00000000000000001A011024 /* Core/AI/LocalEndpointUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/AI/LocalEndpointUtilities.swift; sourceTree = "<group>"; };
+		00000000000000001A011026 /* System/AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = System/AppState.swift; sourceTree = "<group>"; };
+		00000000000000001A011028 /* System/PermissionsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = System/PermissionsManager.swift; sourceTree = "<group>"; };
+		00000000000000001A01102C /* Core/Utilities/SentryMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/Utilities/SentryMock.swift; sourceTree = "<group>"; };
+		00000000000000001A01102E /* Core/Utilities/AnalyticsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/Utilities/AnalyticsService.swift; sourceTree = "<group>"; };
+		00000000000000001A011030 /* Core/Analysis/AnalysisModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/Analysis/AnalysisModels.swift; sourceTree = "<group>"; };
+		00000000000000001A011032 /* Core/Analysis/TimelineCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/Analysis/TimelineCategory.swift; sourceTree = "<group>"; };
+		00000000000000001A011034 /* Core/Recording/StoragePreferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/Recording/StoragePreferences.swift; sourceTree = "<group>"; };
+		00000000000000001A011036 /* Core/Security/KeychainManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/Security/KeychainManager.swift; sourceTree = "<group>"; };
+		00000000000000001A011038 /* Core/Recording/StoragePreferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/Recording/StoragePreferences.swift; sourceTree = "<group>"; };
+		00000000000000001A01103A /* Core/Security/KeychainManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/Security/KeychainManager.swift; sourceTree = "<group>"; };
+		00000000000000001A011040 /* Core/Utilities/UserDefaultsMigrator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/Utilities/UserDefaultsMigrator.swift; sourceTree = "<group>"; };
+		00000000000000001A011042 /* Core/Utilities/StoragePathMigrator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/Utilities/StoragePathMigrator.swift; sourceTree = "<group>"; };
+		1A0000000000000000000001 /* DayArc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DayArc.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A0000020000000000000001 /* DayArcApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayArcApp.swift; sourceTree = "<group>"; };
+		1A0000040000000000000001 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1A0000060000000000000001 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1A0000070000000000000001 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A0000080000000000000001 /* DayArc.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DayArc.entitlements; sourceTree = "<group>"; };
+		1A0000180000000000000001 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		1A00001A0000000000000001 /* LegacyDayflowReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegacyDayflowReader.swift; sourceTree = "<group>"; };
+		1A00001C0000000000000001 /* AIProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIProvider.swift; sourceTree = "<group>"; };
+		1A00001E0000000000000001 /* OpenAIProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAIProvider.swift; sourceTree = "<group>"; };
+		1A0000200000000000000001 /* ClaudeProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClaudeProvider.swift; sourceTree = "<group>"; };
+		1A0000220000000000000001 /* GeminiProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeminiProvider.swift; sourceTree = "<group>"; };
+		1A0000240000000000000001 /* LocalLLMProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalLLMProvider.swift; sourceTree = "<group>"; };
+		1A0000260000000000000001 /* StatsCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsCalculator.swift; sourceTree = "<group>"; };
+		1A0000280000000000000001 /* MarkdownGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownGenerator.swift; sourceTree = "<group>"; };
+		1A00002A0000000000000001 /* ObsidianVault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObsidianVault.swift; sourceTree = "<group>"; };
+		1A00002B0000000000000001 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		1A00002D0000000000000001 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		1A00002F0000000000000001 /* AnalysisView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalysisView.swift; sourceTree = "<group>"; };
+		1A0000310000000000000001 /* SchedulerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchedulerManager.swift; sourceTree = "<group>"; };
+		1A0000330000000000000001 /* LogsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogsView.swift; sourceTree = "<group>"; };
+		1A0000350000000000000001 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		1A0000380000000000000001 /* MigrationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MigrationManager.swift; sourceTree = "<group>"; };
+		1A00003A0000000000000001 /* ProviderDiagnostics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProviderDiagnostics.swift; sourceTree = "<group>"; };
+		1A00003C0000000000000001 /* AnalysisFallback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalysisFallback.swift; sourceTree = "<group>"; };
+		1A00003E0000000000000001 /* ChartGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartGenerator.swift; sourceTree = "<group>"; };
+		1A00C044 /* Core/AI/PromptManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core/AI/PromptManager.swift; sourceTree = "<group>"; };
+		1A00C046 /* Views/Components/PromptEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Views/Components/PromptEditor.swift; sourceTree = "<group>"; };
+		1AFFF0020000000000000001 /* MarkdownGeneratorV2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownGeneratorV2.swift; sourceTree = "<group>"; };
+		1AFFF1020000000000000001 /* MarkdownGeneratorV3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownGeneratorV3.swift; sourceTree = "<group>"; };
+		BE3309ABC48742CBAE60EC4B /* TimelineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1A0000090000000000000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A00D102 /* GRDB in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1A00000A0000000000000001 = {
+			isa = PBXGroup;
+			children = (
+				1A00000B0000000000000001 /* DailyAnalyzer */,
+				1A00000C0000000000000001 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1A00000B0000000000000001 /* DailyAnalyzer */ = {
+			isa = PBXGroup;
+			children = (
+				1A0000020000000000000001 /* DayArcApp.swift */,
+				1A0000040000000000000001 /* ContentView.swift */,
+				1A00002B0000000000000001 /* DashboardView.swift */,
+				1A00002F0000000000000001 /* AnalysisView.swift */,
+				1A00002D0000000000000001 /* SettingsView.swift */,
+				1A0000330000000000000001 /* LogsView.swift */,
+				1A0000180000000000000001 /* Models.swift */,
+				1A00001A0000000000000001 /* LegacyDayflowReader.swift */,
+				1A00001C0000000000000001 /* AIProvider.swift */,
+				1A00001E0000000000000001 /* OpenAIProvider.swift */,
+				1A0000200000000000000001 /* ClaudeProvider.swift */,
+				1A0000220000000000000001 /* GeminiProvider.swift */,
+				1A0000240000000000000001 /* LocalLLMProvider.swift */,
+				1A0000260000000000000001 /* StatsCalculator.swift */,
+				1A0000280000000000000001 /* MarkdownGenerator.swift */,
+				1AFFF0020000000000000001 /* MarkdownGeneratorV2.swift */,
+				1AFFF1020000000000000001 /* MarkdownGeneratorV3.swift */,
+				1A00002A0000000000000001 /* ObsidianVault.swift */,
+				1A0000310000000000000001 /* SchedulerManager.swift */,
+				1A0000350000000000000001 /* NotificationManager.swift */,
+				1A0000380000000000000001 /* MigrationManager.swift */,
+				1A00003A0000000000000001 /* ProviderDiagnostics.swift */,
+				1A00003E0000000000000001 /* ChartGenerator.swift */,
+				1A00C044 /* Core/AI/PromptManager.swift */,
+				1A00C046 /* Views/Components/PromptEditor.swift */,
+				1A00003C0000000000000001 /* AnalysisFallback.swift */,
+				1A0000060000000000000001 /* Assets.xcassets */,
+				00000000000000001A011038 /* Core/Recording/StoragePreferences.swift */,
+				00000000000000001A01103A /* Core/Security/KeychainManager.swift */,
+				00000000000000001A011000 /* Core/Analysis/AnalysisManager.swift */,
+				00000000000000001A011002 /* Core/Recording/RecordingManager.swift */,
+				00000000000000001A011004 /* Core/Recording/ScreenRecorder.swift */,
+				00000000000000001A011006 /* Core/Recording/ActiveDisplayTracker.swift */,
+				00000000000000001A011008 /* Core/Recording/StorageManager.swift */,
+				00000000000000001A01100A /* Core/Video/VideoProcessingService.swift */,
+				00000000000000001A01100C /* Core/Video/TimelapseStorageManager.swift */,
+				00000000000000001A01100E /* Core/AI/LLMService.swift */,
+				00000000000000001A011010 /* Core/AI/LLMProvider.swift */,
+				00000000000000001A011012 /* Core/AI/LLMLogger.swift */,
+				00000000000000001A011014 /* Core/AI/GeminiDirectProvider.swift */,
+				00000000000000001A011016 /* Core/AI/OllamaProvider.swift */,
+				00000000000000001A011018 /* Core/AI/DayflowBackendProvider.swift */,
+				00000000000000001A01101A /* Core/AI/GeminiModelPreference.swift */,
+				00000000000000001A01101C /* Core/AI/GeminiPromptPreferences.swift */,
+				00000000000000001A01101E /* Core/AI/OllamaPromptPreferences.swift */,
+				00000000000000001A011020 /* Core/AI/LocalEngine.swift */,
+				00000000000000001A011022 /* Core/AI/LocalModelPreset.swift */,
+				00000000000000001A011024 /* Core/AI/LocalEndpointUtilities.swift */,
+				00000000000000001A011026 /* System/AppState.swift */,
+				00000000000000001A011028 /* System/PermissionsManager.swift */,
+				00000000000000001A01102C /* Core/Utilities/SentryMock.swift */,
+				00000000000000001A01102E /* Core/Utilities/AnalyticsService.swift */,
+				00000000000000001A011030 /* Core/Analysis/AnalysisModels.swift */,
+				00000000000000001A011032 /* Core/Analysis/TimelineCategory.swift */,
+				00000000000000001A011034 /* Core/Recording/StoragePreferences.swift */,
+				00000000000000001A011036 /* Core/Security/KeychainManager.swift */,
+				00000000000000001A010000 /* Core/Analysis/AnalysisManager.swift */,
+				00000000000000001A010002 /* Core/Recording/RecordingManager.swift */,
+				00000000000000001A010004 /* Core/Recording/ScreenRecorder.swift */,
+				00000000000000001A010006 /* Core/Recording/ActiveDisplayTracker.swift */,
+				00000000000000001A010008 /* Core/Recording/StorageManager.swift */,
+				00000000000000001A01000A /* Core/Video/VideoProcessingService.swift */,
+				00000000000000001A01000C /* Core/Video/TimelapseStorageManager.swift */,
+				00000000000000001A01000E /* Core/AI/LLMService.swift */,
+				00000000000000001A010010 /* Core/AI/LLMProvider.swift */,
+				00000000000000001A010012 /* Core/AI/LLMLogger.swift */,
+				00000000000000001A010014 /* Core/AI/GeminiDirectProvider.swift */,
+				00000000000000001A010016 /* Core/AI/OllamaProvider.swift */,
+				00000000000000001A010018 /* Core/AI/DayflowBackendProvider.swift */,
+				00000000000000001A01001A /* Core/AI/GeminiModelPreference.swift */,
+				00000000000000001A01001C /* Core/AI/GeminiPromptPreferences.swift */,
+				00000000000000001A01001E /* Core/AI/OllamaPromptPreferences.swift */,
+				00000000000000001A010020 /* Core/AI/LocalEngine.swift */,
+				00000000000000001A010022 /* Core/AI/LocalModelPreset.swift */,
+				00000000000000001A010024 /* Core/AI/LocalEndpointUtilities.swift */,
+				00000000000000001A010026 /* System/AppState.swift */,
+				00000000000000001A010028 /* System/PermissionsManager.swift */,
+				00000000000000001A01002C /* Core/Utilities/SentryMock.swift */,
+				00000000000000001A01002E /* Core/Utilities/AnalyticsService.swift */,
+				00000000000000001A010030 /* Core/Analysis/AnalysisModels.swift */,
+				00000000000000001A010032 /* Core/Analysis/TimelineCategory.swift */,
+				00000000000000001A010034 /* Core/Recording/StoragePreferences.swift */,
+				00000000000000001A00F000 /* Core/Analysis/AnalysisManager.swift */,
+				00000000000000001A00F002 /* Core/Recording/RecordingManager.swift */,
+				00000000000000001A00F004 /* Core/Recording/ScreenRecorder.swift */,
+				00000000000000001A00F006 /* Core/Recording/ActiveDisplayTracker.swift */,
+				00000000000000001A00F008 /* Core/Recording/StorageManager.swift */,
+				00000000000000001A00F00A /* Core/Video/VideoProcessingService.swift */,
+				00000000000000001A00F00C /* Core/Video/TimelapseStorageManager.swift */,
+				00000000000000001A00F00E /* Core/AI/LLMService.swift */,
+				00000000000000001A00F010 /* Core/AI/LLMProvider.swift */,
+				00000000000000001A00F012 /* Core/AI/LLMLogger.swift */,
+				00000000000000001A00F014 /* Core/AI/GeminiDirectProvider.swift */,
+				00000000000000001A00F016 /* Core/AI/OllamaProvider.swift */,
+				00000000000000001A00F018 /* Core/AI/DayflowBackendProvider.swift */,
+				00000000000000001A00F01A /* Core/AI/GeminiModelPreference.swift */,
+				00000000000000001A00F01C /* Core/AI/GeminiPromptPreferences.swift */,
+				00000000000000001A00F01E /* Core/AI/OllamaPromptPreferences.swift */,
+				00000000000000001A00F020 /* Core/AI/LocalEngine.swift */,
+				00000000000000001A00F022 /* Core/AI/LocalModelPreset.swift */,
+				00000000000000001A00F024 /* Core/AI/LocalEndpointUtilities.swift */,
+				00000000000000001A00F026 /* System/AppState.swift */,
+				00000000000000001A00F028 /* System/PermissionsManager.swift */,
+				00000000000000001A00F02C /* Core/Utilities/SentryMock.swift */,
+				00000000000000001A00F02E /* Core/Utilities/AnalyticsService.swift */,
+				00000000000000001A00F030 /* Core/Analysis/AnalysisModels.swift */,
+				00000000000000001A00F032 /* Core/Analysis/TimelineCategory.swift */,
+				00000000000000001A00E000 /* Core/Analysis/AnalysisManager.swift */,
+				00000000000000001A00E002 /* Core/Recording/RecordingManager.swift */,
+				00000000000000001A00E004 /* Core/Recording/ScreenRecorder.swift */,
+				00000000000000001A00E006 /* Core/Recording/ActiveDisplayTracker.swift */,
+				00000000000000001A00E008 /* Core/Recording/StorageManager.swift */,
+				00000000000000001A00E00A /* Core/Video/VideoProcessingService.swift */,
+				00000000000000001A00E00C /* Core/Video/TimelapseStorageManager.swift */,
+				00000000000000001A00E00E /* Core/AI/LLMService.swift */,
+				00000000000000001A00E010 /* Core/AI/LLMProvider.swift */,
+				00000000000000001A00E012 /* Core/AI/LLMLogger.swift */,
+				00000000000000001A00E014 /* Core/AI/GeminiDirectProvider.swift */,
+				00000000000000001A00E016 /* Core/AI/OllamaProvider.swift */,
+				00000000000000001A00E018 /* Core/AI/DayflowBackendProvider.swift */,
+				00000000000000001A00E01A /* Core/AI/GeminiModelPreference.swift */,
+				00000000000000001A00E01C /* Core/AI/GeminiPromptPreferences.swift */,
+				00000000000000001A00E01E /* Core/AI/OllamaPromptPreferences.swift */,
+				00000000000000001A00E020 /* Core/AI/LocalEngine.swift */,
+				00000000000000001A00E022 /* Core/AI/LocalModelPreset.swift */,
+				00000000000000001A00E024 /* Core/AI/LocalEndpointUtilities.swift */,
+				00000000000000001A00E026 /* System/AppState.swift */,
+				00000000000000001A00E028 /* System/PermissionsManager.swift */,
+				00000000000000001A00E02C /* Core/Utilities/SentryMock.swift */,
+				00000000000000001A00E02E /* Core/Utilities/AnalyticsService.swift */,
+				00000000000000001A00E030 /* Core/Analysis/AnalysisModels.swift */,
+				00000000000000001A00D000 /* Core/Analysis/AnalysisManager.swift */,
+				00000000000000001A00D002 /* Core/Recording/RecordingManager.swift */,
+				00000000000000001A00D004 /* Core/Recording/ScreenRecorder.swift */,
+				00000000000000001A00D006 /* Core/Recording/ActiveDisplayTracker.swift */,
+				00000000000000001A00D008 /* Core/Recording/StorageManager.swift */,
+				00000000000000001A00D00A /* Core/Video/VideoProcessingService.swift */,
+				00000000000000001A00D00C /* Core/Video/TimelapseStorageManager.swift */,
+				00000000000000001A00D00E /* Core/AI/LLMService.swift */,
+				00000000000000001A00D010 /* Core/AI/LLMProvider.swift */,
+				00000000000000001A00D012 /* Core/AI/LLMLogger.swift */,
+				00000000000000001A00D014 /* Core/AI/GeminiDirectProvider.swift */,
+				00000000000000001A00D016 /* Core/AI/OllamaProvider.swift */,
+				00000000000000001A00D018 /* Core/AI/DayflowBackendProvider.swift */,
+				00000000000000001A00D01A /* Core/AI/GeminiModelPreference.swift */,
+				00000000000000001A00D01C /* Core/AI/GeminiPromptPreferences.swift */,
+				00000000000000001A00D01E /* Core/AI/OllamaPromptPreferences.swift */,
+				00000000000000001A00D020 /* Core/AI/LocalEngine.swift */,
+				00000000000000001A00D022 /* Core/AI/LocalModelPreset.swift */,
+				00000000000000001A00D024 /* Core/AI/LocalEndpointUtilities.swift */,
+				00000000000000001A00D026 /* System/AppState.swift */,
+				00000000000000001A00D028 /* System/PermissionsManager.swift */,
+				00000000000000001A00D02C /* Core/Utilities/SentryMock.swift */,
+				00000000000000001A00D02E /* Core/Utilities/AnalyticsService.swift */,
+				00000000000000001A00C000 /* Core/Analysis/AnalysisManager.swift */,
+				00000000000000001A00C002 /* Core/Recording/RecordingManager.swift */,
+				00000000000000001A00C004 /* Core/Recording/ScreenRecorder.swift */,
+				00000000000000001A00C006 /* Core/Recording/ActiveDisplayTracker.swift */,
+				00000000000000001A00C008 /* Core/Recording/StorageManager.swift */,
+				00000000000000001A00C00A /* Core/Video/VideoProcessingService.swift */,
+				00000000000000001A00C00C /* Core/Video/TimelapseStorageManager.swift */,
+				00000000000000001A00C00E /* Core/AI/LLMService.swift */,
+				00000000000000001A00C010 /* Core/AI/LLMProvider.swift */,
+				00000000000000001A00C012 /* Core/AI/LLMLogger.swift */,
+				00000000000000001A00C014 /* Core/AI/GeminiDirectProvider.swift */,
+				00000000000000001A00C016 /* Core/AI/OllamaProvider.swift */,
+				00000000000000001A00C018 /* Core/AI/DayflowBackendProvider.swift */,
+				00000000000000001A00C01A /* Core/AI/GeminiModelPreference.swift */,
+				00000000000000001A00C01C /* Core/AI/GeminiPromptPreferences.swift */,
+				00000000000000001A00C01E /* Core/AI/OllamaPromptPreferences.swift */,
+				00000000000000001A00C020 /* Core/AI/LocalEngine.swift */,
+				00000000000000001A00C022 /* Core/AI/LocalModelPreset.swift */,
+				00000000000000001A00C024 /* Core/AI/LocalEndpointUtilities.swift */,
+				00000000000000001A00C026 /* System/AppState.swift */,
+				00000000000000001A00C028 /* System/PermissionsManager.swift */,
+				00000000000000001A011040 /* Core/Utilities/UserDefaultsMigrator.swift */,
+				00000000000000001A011042 /* Core/Utilities/StoragePathMigrator.swift */,
+				1A0000070000000000000001 /* Info.plist */,
+				1A0000080000000000000001 /* DayArc.entitlements */,
+				BE3309ABC48742CBAE60EC4B /* TimelineView.swift */,
+			);
+			path = DailyAnalyzer;
+			sourceTree = "<group>";
+		};
+		1A00000C0000000000000001 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1A0000000000000000000001 /* DayArc.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1A00000D0000000000000001 /* DailyAnalyzer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A00000E0000000000000001 /* Build configuration list for PBXNativeTarget "DayArc" */;
+			buildPhases = (
+				1A00000F0000000000000001 /* Sources */,
+				1A0000090000000000000001 /* Frameworks */,
+				1A0000100000000000000001 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DayArc;
+			packageProductDependencies = (
+				1A00D101 /* GRDB */,
+			);
+			productName = DayArc;
+			productReference = 1A0000000000000000000001 /* DayArc.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1A0000110000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					1A00000D0000000000000001 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+				};
+			};
+			buildConfigurationList = 1A0000120000000000000001 /* Build configuration list for PBXProject "DayArc" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1A00000A0000000000000001;
+			packageReferences = (
+				1A00D100 /* XCRemoteSwiftPackageReference "GRDB" */,
+			);
+			productRefGroup = 1A00000C0000000000000001 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1A00000D0000000000000001 /* DailyAnalyzer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1A0000100000000000000001 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A0000050000000000000001 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1A00000F0000000000000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A0000030000000000000001 /* ContentView.swift in Sources */,
+				1A0000010000000000000001 /* DayArcApp.swift in Sources */,
+				1A00002C0000000000000001 /* DashboardView.swift in Sources */,
+				1A0000300000000000000001 /* AnalysisView.swift in Sources */,
+				1A00002E0000000000000001 /* SettingsView.swift in Sources */,
+				1A0000170000000000000001 /* Models.swift in Sources */,
+				1A0000190000000000000001 /* LegacyDayflowReader.swift in Sources */,
+				1A00001B0000000000000001 /* AIProvider.swift in Sources */,
+				1AFFF1010000000000000001 /* MarkdownGeneratorV3.swift in Sources */,
+				1A00001D0000000000000001 /* OpenAIProvider.swift in Sources */,
+				1A00001F0000000000000001 /* ClaudeProvider.swift in Sources */,
+				1A0000210000000000000001 /* GeminiProvider.swift in Sources */,
+				1A0000230000000000000001 /* LocalLLMProvider.swift in Sources */,
+				1A0000250000000000000001 /* StatsCalculator.swift in Sources */,
+				1A0000270000000000000001 /* MarkdownGenerator.swift in Sources */,
+				1A0000290000000000000001 /* ObsidianVault.swift in Sources */,
+				1A0000320000000000000001 /* SchedulerManager.swift in Sources */,
+				1A0000360000000000000001 /* NotificationManager.swift in Sources */,
+				1A0000370000000000000001 /* MigrationManager.swift in Sources */,
+				1A0000390000000000000001 /* ProviderDiagnostics.swift in Sources */,
+				1A00003D0000000000000001 /* ChartGenerator.swift in Sources */,
+				1A00C045 /* Core/AI/PromptManager.swift in Sources */,
+				1A00C047 /* Views/Components/PromptEditor.swift in Sources */,
+				1A00003B0000000000000001 /* AnalysisFallback.swift in Sources */,
+				1A0000340000000000000001 /* LogsView.swift in Sources */,
+				00000000000000001A011001 /* Core/Analysis/AnalysisManager.swift in Sources */,
+				00000000000000001A011003 /* Core/Recording/RecordingManager.swift in Sources */,
+				00000000000000001A011005 /* Core/Recording/ScreenRecorder.swift in Sources */,
+				00000000000000001A011007 /* Core/Recording/ActiveDisplayTracker.swift in Sources */,
+				00000000000000001A011009 /* Core/Recording/StorageManager.swift in Sources */,
+				00000000000000001A01100B /* Core/Video/VideoProcessingService.swift in Sources */,
+				00000000000000001A01100D /* Core/Video/TimelapseStorageManager.swift in Sources */,
+				00000000000000001A01100F /* Core/AI/LLMService.swift in Sources */,
+				00000000000000001A011011 /* Core/AI/LLMProvider.swift in Sources */,
+				00000000000000001A011013 /* Core/AI/LLMLogger.swift in Sources */,
+				00000000000000001A011015 /* Core/AI/GeminiDirectProvider.swift in Sources */,
+				00000000000000001A011017 /* Core/AI/OllamaProvider.swift in Sources */,
+				00000000000000001A011019 /* Core/AI/DayflowBackendProvider.swift in Sources */,
+				00000000000000001A01101B /* Core/AI/GeminiModelPreference.swift in Sources */,
+				00000000000000001A01101D /* Core/AI/GeminiPromptPreferences.swift in Sources */,
+				00000000000000001A01101F /* Core/AI/OllamaPromptPreferences.swift in Sources */,
+				00000000000000001A011021 /* Core/AI/LocalEngine.swift in Sources */,
+				00000000000000001A011023 /* Core/AI/LocalModelPreset.swift in Sources */,
+				00000000000000001A011025 /* Core/AI/LocalEndpointUtilities.swift in Sources */,
+				00000000000000001A011027 /* System/AppState.swift in Sources */,
+				00000000000000001A011029 /* System/PermissionsManager.swift in Sources */,
+				00000000000000001A01102D /* Core/Utilities/SentryMock.swift in Sources */,
+				00000000000000001A01102F /* Core/Utilities/AnalyticsService.swift in Sources */,
+				00000000000000001A011031 /* Core/Analysis/AnalysisModels.swift in Sources */,
+				00000000000000001A011033 /* Core/Analysis/TimelineCategory.swift in Sources */,
+				00000000000000001A011035 /* Core/Recording/StoragePreferences.swift in Sources */,
+				00000000000000001A011037 /* Core/Security/KeychainManager.swift in Sources */,
+				00000000000000001A011041 /* Core/Utilities/UserDefaultsMigrator.swift in Sources */,
+				00000000000000001A011043 /* Core/Utilities/StoragePathMigrator.swift in Sources */,
+				CB9BE03BDDDD4676A5A08E02 /* TimelineView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1A0000130000000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1A0000140000000000000001 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		1A0000150000000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_ENTITLEMENTS = DailyAnalyzer/DayArc.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = DailyAnalyzer/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Daily Analyzer";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Daily Analyzer 2025";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 2.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dayarc.app;
+				PRODUCT_NAME = DayArc;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		1A0000160000000000000001 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_ENTITLEMENTS = DailyAnalyzer/DayArc.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = DailyAnalyzer/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Daily Analyzer";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Daily Analyzer 2025";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 2.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dayarc.app;
+				PRODUCT_NAME = DayArc;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1A00000E0000000000000001 /* Build configuration list for PBXNativeTarget "DayArc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A0000150000000000000001 /* Debug */,
+				1A0000160000000000000001 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1A0000120000000000000001 /* Build configuration list for PBXProject "DayArc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1A0000130000000000000001 /* Debug */,
+				1A0000140000000000000001 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1A00D100 /* XCRemoteSwiftPackageReference "GRDB" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/groue/GRDB.swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1A00D101 /* GRDB */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1A00D100 /* XCRemoteSwiftPackageReference "GRDB" */;
+			productName = GRDB;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 1A0000110000000000000001 /* Project object */;
+}
